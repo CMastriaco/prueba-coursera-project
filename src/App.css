@@ -1,38 +1,434 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navigation {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+}
+.navigation-ul {
+  text-align: center;
+  flex: 1;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+ul {
+  list-style: none;
+  margin-top: 20px;
+  gap: 20px;
+}
+nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+nav li {
+  margin: 0 30px;
+  min-width: 80px;
+}
+.img-logo {
+  width: 200px;
+  margin: 10px;
+  margin: 20px;
+}
+a:hover {
+  color: #495E57;
+}
+header {
+  background-color:#495E57;
+  width: 100%;
+  padding: 50px 150px;
+}
+.title-section {
+  display: flex;
+}
+.title {
+  height: 250px;
+  justify-content: center;
+  flex: 1;
+}
+.title h1 {
+  color: #F4CE14;
+  font-size: 40px;
+}
+.title h3 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.title p {
+  color: white;
+  max-width: 510px;
+  line-height: 1.5;
+}
+.title button {
+  border-radius: 16px;
+  background-color:#F4CE14;
+  font-weight: bold;
+  height: 30px;
+  width: 170px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.title-img {
+  top: 40%;
+  right: 10%;
+  flex: 1;
+}
+.title-img img {
+  border-radius: 16px;
+  width: auto;
+  height: 280px;
+  margin-left: 300px;
+}
+.specials {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 200px;
+  gap: 800px;
+}
+.specials h2 {
+  min-width: 300px;
+}
+.specials button {
+  border-radius: 16px;
+  min-width: 150px;
+  height: 30px;
+  background-color:#F4CE14;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.specials h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dishes {
+  display: flex;
+  height: 500px;
+align-items: center;
+  justify-content: space-between;
+}
+.container-section-dish {
+  background-color: #EDEFEE;
+  justify-self: flex-end;
+  margin-top: -40px;
+}
+.dish-container {
+  background-color: #FBDABB;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 400px;
+  height: 350px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h5, .price {
+  display: inline-flex;
+}
+.description {
+  margin: 5px;
+}
+.salad-title, .bruschetta-title, .dessert-title {
+  margin-left: 5px;
+}
+.price {
+  font-weight: bold;
+  margin-left: 220px;
+}
+.delivery-text-salad, .delivery-text-dessert, .delivery-text-bruschetta {
+  border-radius: 16px;
+  min-width: 130px;
+  height: 20px;
+  background-color:#F4CE14;
+  font-weight: bold;
+  align-self: flex-start;
+}
+.delivery-text-bruschetta {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.delivery-text-dessert, .delivery-text-salad {
+  margin-left: 10px;
+  margin-top: 25px;
+}
+.testimonials-section {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  min-width: 1450px;
+}
+.container-testimonials {
+  background-color: #333333;
+  height: 200px;
+  width: 400px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.photo-testimonials {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.photo-user {
+  flex: 1;
+}
+.star-photo {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+.photo-user-name {
+  flex-direction: row;
+  display: flex;
+  margin: 30px;
+}
+.name {
+  margin-right: 200px;
+  color: white;
+}
+.review {
+  color: white;
+}
+.photo-user {
+  color: white;
+}
+.testimonials-section-one h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  min-width: 1450px;
+}
+.review {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about {
+  background-color: #FBDABB;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  height: 350px;
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.img-about {
+  margin: 40px 0 300px 450px;
+  position: relative;
+}
+.bottom-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.top-image {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 80%;
+  height: 200px;
+  border-radius: 16px;
+}
+.about-little-lemon {
+  text-align: left;
+  margin-left: 205px;
+}
+.about-little-lemon p {
+  margin: 20px 20px 20px 0;
+  width: 400px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+.about-little-lemon h1 {
+  color: #495E57;
+  padding-top: 10px;
+  margin-top: 30px;
+  font-size: 40px;
+}
+.about-little-lemon h3 {
+  margin-top: -9px;
+  margin-bottom: 24px;
+  font-size: 30px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #EDEFEE;
+  margin-top: -20px;
+}
+.footer-logo {
+  flex: 1;
+  margin: 20px;
+  align-items: center;
+}
+.footer-one {
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+}
+.footer-column:last-child {
+  margin-right: 0;
+}
+.footer-one li {
+  margin-top: 10px;
+}
+.footer h3 {
+  font-weight: 900;
+}
+.reservation-table {
+  color:#495E57;
+  background-color: #F4CE14;
+}
+@media (max-width: 1500px) {
+  header {
+    min-width: 1450px;
+  }
+  .container-section-dish {
+    min-width: 1450px;
+  }
+  .about {
+    min-width: 1450px;
+  }
+  .footer {
+    min-width: 1450px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .all-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(C:\Users\camim\prueba-coursera-project\public\Image-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+  }
+  .form {
+    background-color: #FBDABB;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .form label {
+    font-weight: bold;
+  }
+  
+  .form input,
+  .form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #EDEFEE;
+  }
+  .form button {
+    background-color: #495E57; 
+    color: #F4CE14;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .reservation-table {
+    margin: 20px;
+    color: #F4CE14;
+    font-weight: 400em;
+  }
+  .div-title {
+    background-color: #495E57;
+    border-radius: 16px;
+    height: 40px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.all-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(C:\Users\camim\prueba-coursera-project\public\Image-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100vh;
+}
+.form {
+  background-color: #FBDABB;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form label {
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #EDEFEE;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form button {
+  background-color: #495E57; 
+  color: #F4CE14;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.reservation-table {
+  margin: 20px;
+  color: #F4CE14;
+  font-weight: 400em;
+}
+.div-title {
+  background-color: #495E57;
+  border-radius: 16px;
+  height: 40px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
